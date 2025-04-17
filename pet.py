@@ -6,7 +6,7 @@ if sys.stdout.encoding != 'UTF-8':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 class Pet:
-    def __init__(self, name, pet_type="dog"):
+    def __init__(self, name, pet_type="cat"):
         self.name = name
         self.hunger = 5
         self.energy = 5
@@ -78,7 +78,7 @@ class Pet:
     def wake_up(self):
         "Wake the pet up"
         if not self.is_sleeping:
-            print(f"{self.name} is already awake")
+            print(f"{self.name} is awake")
             return
         self.is_sleeping = False
         print(f"{self.name} woke up! Good morning")
