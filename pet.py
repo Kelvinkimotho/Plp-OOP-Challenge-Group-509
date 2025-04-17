@@ -15,7 +15,6 @@ class Pet:
         self.pet_type = pet_type.lower()
         self.emoji = self._get_emoji()
         self.is_sleeping = False 
-    
     def _get_emoji(self):
         emojis = {
             "cat": "🐈"
