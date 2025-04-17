@@ -18,6 +18,6 @@ my_pet.get_status()
 print("\nCreating pet: Cat")
 my_pet = Pet("Cat", "cat")
 
-# Interaction
+# Interaction.
 my_pet.speak()
 my_pet.wake_up()
