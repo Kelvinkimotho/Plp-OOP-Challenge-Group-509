@@ -16,8 +16,9 @@ my_pet.get_status()
 
 # Creating another pet object
 print("\nCreating pet: Cat")
-my_pet = Pet("Cat", "cat")
+my_pet2 = Pet("Cat", "cat")
 
 # Interaction.
-my_pet.speak()
-my_pet.wake_up()
+my_pet2.speak()
+my_pet2.wake_up()
+my_pet2.get_status()
