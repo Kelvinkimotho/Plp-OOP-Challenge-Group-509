@@ -14,7 +14,7 @@ class Pet:
         self.tricks = []
         self.pet_type = pet_type.lower()
         self.emoji = self._get_emoji()
-        self.is_sleeping = False 
+        self.is_sleeping = False
     def _get_emoji(self):
         emojis = {
             "cat": "🐈"
@@ -49,7 +49,7 @@ class Pet:
     def train(self, trick):
         self.tricks.append(trick)
         self.happiness = min(10, self.happiness + 1)
-        print(f"{self.name} learned {trick}")
+        print(f"{self.name} learned : {trick}")
 
     def show_tricks(self):
         if not self.tricks:
@@ -65,7 +65,6 @@ class Pet:
         print(f"💤 Sleeping: {'Yes' if self.is_sleeping else 'No'}")
         if self.tricks:
             print(f"Tricks: {self.tricks}")
-    
     def speak(self):
         sounds = {
             "cat": "Meow"
@@ -73,7 +72,7 @@ class Pet:
         sound = sounds.get(self.pet_type, "Hello")
         print(f"{self.emoji} {self.name} says: {sound}")
         return sound
-    
+
     def wake_up(self):
         "Wake the pet up"
         if not self.is_sleeping:
@@ -81,4 +80,3 @@ class Pet:
             return
         self.is_sleeping = False
         print(f"{self.name} woke up! Good morning")
-
